@@ -1,0 +1,181 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Page ── */
+body{
+    background-image: url("pic/bglogpic.jpg");
+}
+body {
+ 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a1a;
+}
+
+/* ── Main wrapper ── */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* ── Shared card style for both container & container1 ── */
+.container,
+.container1 {
+  background: #ffffff;
+  border: 1px solid #e4e4e0;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Form title ── */
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.75rem;
+  color: #1a1a1a;
+}
+
+/* ── Input groups ── */
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 7px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Icon + input wrapper (new helper, no ID/class conflict) ── */
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrap i {
+  position: absolute;
+  left: 13px;
+  font-size: 13px;
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* ── f1 — used on inputs and toggle buttons ── */
+.f1 {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  font-size: 14px;
+  background: #f9f9f7;
+  border: 1px solid #e4e4e0;
+  border-radius: 9px;
+  color: #1a1a1a;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.f1::placeholder {
+  color: #bbb;
+}
+
+.f1:focus {
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.07);
+  background: #fff;
+}
+
+/* Toggle buttons (#signInBtn, #signUpBtn) also carry .f1 */
+#signInBtn,
+#signUpBtn {
+  padding: 9px 14px;
+  background: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: auto;
+}
+
+#signInBtn:hover,
+#signUpBtn:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ── Submit button ── */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  margin-top: 0.75rem;
+  font-size: 14px;
+  font-weight: 600;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+/* ── Link / toggle area ── */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  font-size: 13px;
+  color: #888;
+}
+
+.link p {
+  margin: 0;
+}
+
+/* ── sinUp / sinIn panel IDs (no extra styling needed, handled by container classes) ── */
+#sinUp,
+#sinIn {
+  /* intentionally empty — layout handled by .container / .container1 */
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .container,
+  .container1 {
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+}

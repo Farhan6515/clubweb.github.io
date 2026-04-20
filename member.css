@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #dddddf;
+  color: #333;
+}
+
+
+.header {
+  
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+}
+
+
+.graph-section {
+  width: 80%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.members {
+  padding: 20px;
+}
+
+.member-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.member-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.member-card div {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.active {
+  background: green;
+}
+
+.inactive {
+  background: red;
+}

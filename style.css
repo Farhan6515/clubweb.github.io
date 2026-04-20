@@ -1,0 +1,20 @@
+body{
+    background-color:#EEEEEE;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+#heading{
+    font-size: 40px;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    color:#000000;
+}
+big{
+    color: white;
+}
+
+

@@ -1,0 +1,94 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+#b1{
+    border-radius: 100px;
+   
+}
+.size{
+    height: 80px;
+}
+
+#pic{
+    border-radius: 30px;
+}
+
+
+#hp{
+    font-family: "Inter Tight", serif;
+    font-size: 32px;
+    
+}
+#ht{
+    font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style:italic;
+    color: rgb(75, 69, 69);
+}
+
+#goal{
+    font-family: "Inter Tight", serif;
+    font-size: 32px; 
+    font-weight: bold;
+}
+#v1{
+    width: 100%;
+}
+
+#cp{
+    align-items: center;
+    font-family: "Inter Tight", serif;
+    font-size: 20px;
+    
+}
+#btn{
+    height: 20%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color:rgb(54,  54, 214);
+    border-radius: 30px;
+}
+
+#joinbtn{
+    margin-top: 10px;
+    margin-left: 40%;
+    height: 40px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(8, 158, 28);
+    border-radius: 30px;
+}
+#why{
+    margin-top: 10px;
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 786px) {
+     #pic{
+        width: 100%;
+   
+}
+#ht{
+    color: rgb(53, 51, 51);
+    font-weight: 600;
+    margin-top: 80px;
+    font-size:24px;
+}
+
+#joinbtn{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(8, 158, 28);
+    border-radius: 30px;
+}
+}
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Club Members</title>
+  <link rel="stylesheet" href="member.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>Club Members Dashboard</h1>
+</header>
+
+
+<section class="stats">
+  <div class="card">
+    <h2>120</h2>
+    <p>Total Members</p>
+  </div>
+  <div class="card">
+    <h2>45</h2>
+    <p>Active Members</p>
+  </div>
+  <div class="card">
+    <h2>10</h2>
+    <p>New This Month</p>
+  </div>
+</section>
+
+
+<section class="graph-section">
+  <h2>Membership Growth</h2>
+  <canvas id="memberChart"></canvas>
+</section>
+
+
+<section class="members">
+  <h2>Members List</h2>
+
+  <div class="member-card">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+    <div>
+      <h3>John Doe</h3>
+      <p>President</p>
+    </div>
+    <span class="status active">Active</span>
+  </div>
+
+  <div class="member-card">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+    <div>
+      <h3>Jane Smith</h3>
+      <p>Designer</p>
+    </div>
+    <span class="status inactive">Inactive</span>
+  </div>
+
+  <div class="member-card">
+    <img src="https://randomuser.me/api/portraits/men/76.jpg">
+    <div>
+      <h3>Alex Khan</h3>
+      <p>Developer</p>
+    </div>
+    <span class="status active">Active</span>
+  </div>
+
+</section>
+
+<script>
+const ctx = document.getElementById('memberChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    datasets: [{
+      label: 'Members Joined',
+      data: [10, 20, 35, 50, 70],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+</script>
+
+</body>
+</html>
